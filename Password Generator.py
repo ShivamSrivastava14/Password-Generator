@@ -27,12 +27,12 @@ Label(root, text='For more enquiry to DM me\n www.instagram.com/itsshivamsrivast
 # Select password length
 pass_label1 = Label(root, text='PASSWORD LENGTH', bg='#856ff8',
                     fg='black', font='Helvetica 15 bold').pack(pady=20)
-pass_len = IntVar()
+pass_len = IntVar() # Holds an integer; default value 0.
 length = Spinbox(root, from_=8, to_=50, textvariable=pass_len,
                  width=22, borderwidth=2, relief=SOLID, font='Times 14').pack()
 
 # Define function for generating password
-pass_str = StringVar()
+pass_str = StringVar() # Holds a string; default value ""
 
 def Generator():
     password = ''
